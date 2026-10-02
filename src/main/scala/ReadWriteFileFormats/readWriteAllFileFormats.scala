@@ -27,7 +27,7 @@ object readWriteAllFileFormats {
     )
     val df = spark.createDataFrame(data).toDF(cols: _*)
     df.printSchema()
-    // df.show(false)
+    df.show(false)
 
 
     // 1. CSV file format
