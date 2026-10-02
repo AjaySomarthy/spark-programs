@@ -11,6 +11,6 @@ object practiceCode_Spark_1 {
     val spark: SparkSession = SparkSession.builder()
       .master("local[1]").appName("Reduce action usage").getOrCreate()
 
-    println("Hello there")
+    println("Hello there 123")
   }
 }
