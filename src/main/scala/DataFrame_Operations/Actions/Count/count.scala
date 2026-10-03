@@ -11,7 +11,7 @@ object count {
   def main(args:Array[String]):Unit={
 
     val spark:SparkSession = SparkSession.builder()
-      .master("local[1]").appName("Count action usage").getOrCreate()
+      .master("local[1]").appName("Count action usage in Spark Data Frames").getOrCreate()
 
     val cols = Seq("Name","Marks")
     val data = Seq(
