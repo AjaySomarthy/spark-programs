@@ -11,7 +11,7 @@ object practiceCode_Spark_1 {
     val spark: SparkSession = SparkSession.builder()
       .master("local[1]").appName("Testing codes here").getOrCreate()
 
-
+    println("Hello There")
 
   }
 }
