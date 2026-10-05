@@ -26,7 +26,7 @@ object readWriteAllFileFormats {
       ("Harika", "CSE", 99)
     )
     val df = spark.createDataFrame(data).toDF(cols: _*)
-    df.printSchema()
+    // df.printSchema()
     df.show(false)
 
 
