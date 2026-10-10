@@ -3,6 +3,7 @@ package DataFrame_Operations.Transformations.Combining.Union
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 
+// Union programme on Spark Data Frames
 object unionWithSampleData {
   Logger.getLogger("org").setLevel(Level.ERROR)
 

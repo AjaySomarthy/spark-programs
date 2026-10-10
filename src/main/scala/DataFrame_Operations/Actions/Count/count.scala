@@ -4,7 +4,7 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
 
-// count() usage in Spark Data Frames
+// count() as an action in Spark Data Frames
 object count {
   Logger.getLogger("org").setLevel(Level.ERROR)
 
@@ -26,6 +26,7 @@ object count {
     /*df.printSchema()
     df.show(false)*/
 
+
     // Finding number of rows in a data frame
     /*println("Number of rows in a data frame is :")
     println(df.count())*/
@@ -35,30 +36,24 @@ object count {
     println(df.distinct().count())*/
 
 
-    // distinct df vs distinct number of rows
-    // df.distinct() is a data frame with distinct rows
-    // df.distinct().count() is a value, i.e it tells how many number of distinct rows existed in a data frame
-    /*df.distinct().show(false)
-    println(df.distinct().count())*/
+    // observe the below :
+    // In Spark Scala to check the return type we use "value.getClass"
+    // println(df.count().getClass)
 
+    // In Spark Scala to convert a value to int we use "value.toInt"
+    // println(df.count().toInt)
 
-    // observe these
-    /*println(df.count())                   // it returns a value
-    println(df.count().getClass)          // it returns it's type which is long
-    println(df.count().toInt)             // it converts the value to int and prints that value
-    println(df.count().toInt.getClass)*/    // it converts the value to int and prints that type
+    // checking the return type name and now we can see it is int
+    // println(df.count().toInt.getClass)
 
-    // Note : With out println() method, these prints nothing
-    /*df.count()
-    df.count().getClass()
-    df.count().toInt
-    df.count().toInt.getClass*/
+    // checking the return type name
+    // println(df.count().toInt.getClass.getSimpleName)
 
 
     // Task : Find how many number of students are having marks greater than 75
-    // we have to exclude duplicates here, so
-    /*val df1 = df.distinct().where(col("Marks") >= 75)
-    df1.show(false)*/
+    // we have to exclude duplicates here
+    val distinctStudentsCount = df.distinct().where(col("Marks") >= 75).count()
+    println(distinctStudentsCount)
 
   }
 }
