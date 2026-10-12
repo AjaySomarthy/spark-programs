@@ -4,18 +4,18 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
 
-// Performing repartition() and coalesce() on a Data Frame
+// Performing repartition() and coalesce() on a DataFrame
 object RepartitionCoalesce {
   Logger.getLogger("org").setLevel(Level.ERROR)
 
   def main(args: Array[String]): Unit = {
 
     val spark: SparkSession = SparkSession.builder()
-      .master("local[1]").appName("repartitioning and coalescing on a data frame")
+      .master("local[1]").appName("Repartitioning and Coalescing on a DataFrame")
       .getOrCreate()
 
     val inputDF = spark.read.option("header","true").option("inferSchema","true")
-      .csv("src/main/resources/DataFrame_Operations/Transformations/Repartition_Coalesce/StudentsData.csv")
+      .csv("src/main/resources/dataframeoperations/transformations/repartitioncoalesce/students_data.csv")
     /*inputDF.printSchema()
     inputDF.show(30)*/
 

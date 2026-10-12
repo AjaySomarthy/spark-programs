@@ -4,12 +4,13 @@ import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.DataFrame
 
+// Performing repartition() on Spark DataFrame
 object Repartition {
   Logger.getLogger("org").setLevel(Level.ERROR)
 
   def getInputDF(spark : SparkSession) : DataFrame = {
     val inputDF = spark.read.option("header","true").option("inferSchema","true")
-      .csv("src/main/resources/DataFrame_Operations/Transformations/Repartition_Coalesce/StudentsData.csv")
+      .csv("src/main/resources/dataframeoperations/transformations/repartitioncoalesce/students_data.csv")
 
     inputDF
   }
@@ -17,7 +18,7 @@ object Repartition {
   def main(args: Array[String]): Unit = {
 
     val spark: SparkSession = SparkSession.builder().master("local[1]")
-      .appName("Coalescing a data frame").getOrCreate()
+      .appName("Rpartitioning a DataFrame").getOrCreate()
 
 
     val inputDF = getInputDF(spark)

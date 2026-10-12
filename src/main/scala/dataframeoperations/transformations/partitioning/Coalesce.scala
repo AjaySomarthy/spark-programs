@@ -3,14 +3,14 @@ package dataframeoperations.transformations.partitioning
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 
-// Performing coalesce() on Spark Data Frames
+// Performing coalesce() on Spark DataFrame
 object Coalesce {
   Logger.getLogger("org").setLevel(Level.ERROR)
 
   def main(args:Array[String]):Unit={
 
     val spark : SparkSession = SparkSession.builder().master("local[1]")
-      .appName("Coalescing a data frame").getOrCreate()
+      .appName("Coalescing a DataFrame").getOrCreate()
 
 
     // Get input DataFrame from repartition.scala
