@@ -3,6 +3,7 @@ package practice
 import org.apache.log4j._
 import org.apache.spark.sql.SparkSession
 
+// Spark Playground2 for Spark Scala programs
 object SparkPlayground2 {
    Logger.getLogger("org").setLevel(Level.ERROR)
 

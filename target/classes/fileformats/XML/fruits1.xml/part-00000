@@ -1,0 +1,58 @@
+<fruit>
+    <fru>
+        <Product>Grapes</Product>
+        <Country>India</Country>
+        <City>Delhi</City>
+        <Rate>180</Rate>
+    </fru>
+
+    <fru>
+        <Product>Grapes</Product>
+        <Country>India</Country>
+        <City>Mumbai</City>
+        <Rate>170</Rate>
+    </fru>
+
+    <fru>
+        <Product>Grapes</Product>
+        <Country>USA</Country>
+        <City>Canada</City>
+        <Rate>200</Rate>
+    </fru>
+
+    <fru>
+        <Product>Grapes</Product>
+        <Country>USA</Country>
+        <City>Dallas</City>
+        <Rate>190</Rate>
+    </fru>
+
+    <fru>
+        <Product>Orange</Product>
+        <Country>India</Country>
+        <City>Delhi</City>
+        <Rate>80</Rate>
+    </fru>
+
+    <fru>
+        <Product>Orange</Product>
+        <Country>India</Country>
+        <City>Mumbai</City>
+        <Rate>70</Rate>
+    </fru>
+
+    <fru>
+        <Product>Orange</Product>
+        <Country>USA</Country>
+        <City>Canada</City>
+        <Rate>100</Rate>
+    </fru>
+
+    <fru>
+        <Product>Orange</Product>
+        <Country>USA</Country>
+        <City>Dallas</City>
+        <Rate>90</Rate>
+    </fru>
+
+</fruit>

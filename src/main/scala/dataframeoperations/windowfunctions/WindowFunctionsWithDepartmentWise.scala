@@ -38,7 +38,7 @@ object WindowFunctionsWithDepartmentWise {
 
     // Creating a df1 from CSV file
     val df1 = spark.read.option("header", "true")
-      .csv("C:\\Spark_Sample_Files\\WindowFunctions\\studentsDataDepartmentWise.csv")
+      .csv("C:\\Spark_Sample_Files\\WindowFunctions\\students_data_department_wise.csv")
     // df1.printSchema()
     // df1.show(false)
 

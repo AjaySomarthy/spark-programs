@@ -1,0 +1,50 @@
+<people>
+    <ppl>
+        <Name>Anusha</Name>
+        <Branch>ECE</Branch>
+        <Marks>85</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Bindhu</Name>
+        <Branch>ECE</Branch>
+        <Marks>95</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Chitra</Name>
+        <Branch>ECE</Branch>
+        <Marks>75</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Divya</Name>
+        <Branch>ECE</Branch>
+        <Marks>98</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Eesha</Name>
+        <Branch>CSE</Branch>
+        <Marks>55</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Fathima</Name>
+        <Branch>CSE</Branch>
+        <Marks>92</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Ganga</Name>
+        <Branch>CSE</Branch>
+        <Marks>35</Marks>
+    </ppl>
+
+    <ppl>
+        <Name>Harika</Name>
+        <Branch>CSE</Branch>
+        <Marks>99</Marks>
+    </ppl>
+
+</people>

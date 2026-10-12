@@ -1,0 +1,38 @@
+<employee>
+    <emp>
+        <Name>Anusha</Name>
+        <Department>IT</Department>
+        <Salary>30500</Salary>
+    </emp>
+
+    <emp>
+        <Name>Bindhu</Name>
+        <Department>IT</Department>
+        <Salary>25000</Salary>
+    </emp>
+
+    <emp>
+        <Name>Chitra</Name>
+        <Department>IT</Department>
+        <Salary>40500</Salary>
+    </emp>
+
+    <emp>
+        <Name>Divya</Name>
+        <Department>Sales</Department>
+        <Salary>70600</Salary>
+    </emp>
+
+    <emp>
+        <Name>Eesha</Name>
+        <Department>Sales</Department>
+        <Salary>22000</Salary>
+    </emp>
+
+    <emp>
+        <Name>Fathima</Name>
+        <Department>Sales</Department>
+        <Salary>10900</Salary>
+    </emp>
+
+</employee>

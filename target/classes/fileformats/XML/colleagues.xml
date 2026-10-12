@@ -1,0 +1,26 @@
+<colleague>
+   <coll>
+      <Name>Anusha</Name>
+      <Branch>ECE</Branch>
+      <Marks>95</Marks>
+   </coll>
+
+   <coll>
+      <Name>Bindhu</Name>
+      <Branch>ECE</Branch>
+      <Marks>85</Marks>
+   </coll>
+
+   <coll>
+      <Name>Chitra</Name>
+      <Branch>CSE</Branch>
+      <Marks>60</Marks>
+   </coll>
+
+   <coll>
+      <Name>Divya</Name>
+      <Branch>CSE</Branch>
+      <Marks>50</Marks>
+   </coll>
+
+</colleague>

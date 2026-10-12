@@ -1,0 +1,3 @@
+Name, Salary
+Anusha, 60500
+Bindhu, 35600
