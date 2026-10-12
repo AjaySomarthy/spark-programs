@@ -61,21 +61,21 @@ object CreatingDataframe {
     // df5.show(false)
 
     // creating a data frame from reading a CSV file
-    val dfFromCSV = spark.read.option("header","true").option("Infer","Schema")
+    /*val dfFromCSV = spark.read.option("header","true").option("inferSchema","true")
       .csv("src/main/resources/dataframeoperations/creatingdataframe/employees.csv")
-    /*dfFromCSV.printSchema()
-    dfFromCSV.show(false)*/
+    dfFromCSV.printSchema()
+    dfFromCSV.show(false)
 
     // creating a data frame from reading a text file
-    val dfFromText = spark.read.option("Header", "True").option("Infer","Schema")
+    val dfFromText = spark.read.option("header", "true").option("Infer","Schema")
       .text("src/main/resources/dataframeoperations/creatingdataframe/employees.txt")
-    /*dfFromText.printSchema()
-    dfFromText.show(false)*/
+    dfFromText.printSchema()
+    dfFromText.show(false)
 
     // creating a data frame from reading a json file
-    val dfFromJson = spark.read.option("Header", "True").option("Infer", "Schema")
+    val dfFromJson = spark.read.option("header", "true").option("inferSchema","true")
       .json("src/main/resources/dataframeoperations/creatingdataframe/employees.json")
-    /*dfFromJson.printSchema()
+    dfFromJson.printSchema()
     dfFromJson.show(false)*/
 
   }

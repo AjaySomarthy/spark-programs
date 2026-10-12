@@ -6,6 +6,11 @@ object SparkPlayground {
 
     println("Welcome to Spark Scala programs")
 
+    println(
+      "Hadoop Version: " +
+        org.apache.hadoop.util.VersionInfo.getVersion
+    )
+
   }
 
 }
